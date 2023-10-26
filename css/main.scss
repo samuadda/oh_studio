@@ -6,13 +6,22 @@ $light: #f0efee;
 * {
     box-sizing: border-box;
 }
+
+@mixin list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 a {
     text-decoration: none;
     color: $s-dark;
+    &:hover{
+        color: $s-dark;
+    }
 }
 
-
 body {
+    min-height: 1000px;
     padding: 0;
     background-color: $s-light;
     &>div{
@@ -21,18 +30,19 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 150px;
+            height: 100px;
             ul{
+                @include list-reset;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                list-style: none;
                 padding:4px;
-                margin: 0;
                 border-radius: 25px;
                 background-color: $light;
                 color: $s-dark;
                 width: 300px;
+                opacity: 0.9;
+                backdrop-filter: blur(16px);
                 li {
                 padding: 10px;
                 font-size:0.9rem ;
@@ -42,6 +52,54 @@ body {
                     &:hover{
                         background-color: $s-light;
                         border-radius: 20px;
+                    }
+                }
+            }
+        }
+        section {
+            height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 72px;
+                font-weight: 500;
+                text-align: center;
+                padding: 0 300px;
+            }
+            ul {
+                @include list-reset;
+                display: flex;
+                color: $s-dark;
+                width: 500px;
+                align-items: center;
+                li {
+                    padding: 8px;
+                    font-size:0.9rem ;
+                    font-weight: 500;
+                    text-align: center;
+                    width: 100%;
+                    background-color: $light;
+                    text-wrap: nowrap;
+                    margin: 0 10px;
+                    border-radius: 20px;
+                }
+                
+            } 
+        }
+        .products {
+            display: flex;
+            padding: 50px;
+            .pacs{
+                display: flex;
+                width: 100%;
+                div{
+                    width: 150px;
+                    height: 150px;
+                    background-color: red;
+                    img {
+
                     }
                 }
             }

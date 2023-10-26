@@ -6,8 +6,12 @@ a {
   text-decoration: none;
   color: #000000;
 }
+a:hover {
+  color: #000000;
+}
 
 body {
+  min-height: 1000px;
   padding: 0;
   background-color: #FFFFFF;
 }
@@ -18,19 +22,23 @@ body > div header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 100px;
 }
 body > div header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
   padding: 4px;
-  margin: 0;
   border-radius: 25px;
   background-color: #f0efee;
   color: #000000;
   width: 300px;
+  opacity: 0.9;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
 }
 body > div header ul li {
   padding: 10px;
@@ -42,4 +50,50 @@ body > div header ul li {
 body > div header ul li:hover {
   background-color: #FFFFFF;
   border-radius: 20px;
+}
+body > div section {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+body > div section h1 {
+  font-size: 72px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 300px;
+}
+body > div section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #000000;
+  width: 500px;
+  align-items: center;
+}
+body > div section ul li {
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  background-color: #f0efee;
+  text-wrap: nowrap;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+body > div .products {
+  display: flex;
+  padding: 50px;
+}
+body > div .products .pacs {
+  display: flex;
+  width: 100%;
+}
+body > div .products .pacs div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
