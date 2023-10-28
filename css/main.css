@@ -13,10 +13,10 @@ a:hover {
 body {
   min-height: 1000px;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 body > div {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 body > div header {
   display: flex;
@@ -48,23 +48,23 @@ body > div header ul li {
   width: 100%;
 }
 body > div header ul li:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
 }
-body > div section {
+body > div .main-text {
   height: 60vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
-body > div section h1 {
+body > div .main-text h1 {
   font-size: 72px;
   font-weight: 500;
   text-align: center;
   padding: 0 300px;
 }
-body > div section ul {
+body > div .main-text ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,7 +73,7 @@ body > div section ul {
   width: 500px;
   align-items: center;
 }
-body > div section ul li {
+body > div .main-text ul li {
   padding: 8px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -86,14 +86,64 @@ body > div section ul li {
 }
 body > div .products {
   display: flex;
-  padding: 50px;
+  padding: 40px;
+  justify-content: space-around;
+  row-gap: 30px;
+  flex-wrap: wrap;
 }
-body > div .products .pacs {
-  display: flex;
+body > div .products .photo-box {
+  width: 48%;
+  height: 500px;
+}
+body > div .products .photo-box img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
-body > div .products .pacs div {
-  width: 150px;
-  height: 150px;
-  background-color: red;
+body > div .sub-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  align-items: center;
+}
+
+.shop-sticky-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-sticky-button img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  font-size: 15px;
+  font-weight: 500;
+}
+footer .logo-copyright {
+  display: flex;
+  align-items: center;
+}
+footer .logo-copyright .foot-logo {
+  width: 50px;
+}
+footer .media-links {
+  display: flex;
+}
+footer .media-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+footer .media-links ul li {
+  margin: 0 10px;
 }/*# sourceMappingURL=main.css.map */
